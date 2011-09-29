@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+PLUGINPATH=./plugins
+
+function get_plugins() {
+}
+
+function help() {
+}
+
+if [ $# -qe 0 ]; then
+	help
+fi

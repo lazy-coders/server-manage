@@ -1,0 +1,54 @@
+#!/usr/bin/env bash
+
+# Loads default configuration
+
+if [ -f /etc/default/server-manage ]; then
+	. /etc/default/server-manage
+fi
+
+[ ${#CONFIG_PATH} -eq 0 ] && CONFIG_PATH=/etc/sever-manage
+
+USERS_FILE=${CONFIG_PATH}/users.conf
+
+function help() {
+	echo "$0: user configuration tool"
+	echo "   $0 {add|del|mod|info} USER"
+	echo
+	echo "   add USER"
+	echo "   del USER"
+	echo "   mod USER"
+	echo "   info USER"
+}
+
+function add() {
+	echo
+}
+
+function del() {
+	echo
+}
+
+function mod() {
+	echo
+}
+
+function info() {
+	echo
+}
+
+case $1 in
+	add)
+		add $2
+		;;
+	del)
+		del $2
+		;;
+	mod)
+		mod $2
+		;;
+	info)
+		info $2
+		;;
+	*)
+		help
+esac

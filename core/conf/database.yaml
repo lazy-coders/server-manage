@@ -1,0 +1,6 @@
+production:
+  adapter: mysql
+  host: localhost
+  username: sm
+  password: smpwd1230
+  database: server

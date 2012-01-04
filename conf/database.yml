@@ -4,3 +4,7 @@ production:
   username: sm
   password: smpwd1230
   database: server
+
+sqlite:
+  adapter: sqlite3
+  database: db/test.sqlite3

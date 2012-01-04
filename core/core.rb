@@ -4,8 +4,8 @@ require 'psych'
 class Core
 	@@database_conf = nil
 	@@configuration = {
-		:conf_path => './',
-		:environment => 'production',
+		:conf_path => './conf/',
+		:environment => 'sqlite',
 		:domain_path => './domain/'
 	}
 
@@ -35,4 +35,4 @@ class Core
 		end
 end
 
-Core.init :conf_path => '../conf/'
+#Core.init :conf_path => '../conf/'

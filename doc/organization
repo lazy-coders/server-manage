@@ -1,0 +1,13 @@
+Server Organization
+===================
+
+User Homes
+-------------------
+
+User homes are allocated at /home.
+
+
+Web Domains
+-------------------
+
+Each domains is allocated at /var/www/domain/$USER/$DOMAINNAME. At the users home there is a domains directory that it is a softlink to /var/www/domain/$USER.

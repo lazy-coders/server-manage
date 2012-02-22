@@ -10,6 +10,13 @@ class Setup < ActiveRecord::Migration
 			t.string :name
 			t.text   :description
 		end
+
+		create_table :configs do |t|
+			t.id :user
+			t.id :service
+			t.string :param
+			t.string :value
+		end
 	end
 
 	def down

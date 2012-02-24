@@ -18,6 +18,13 @@ class Setup < ActiveRecord::Migration
 			t.references :service
 			t.timestamps
 		end
+
+		create_table :configs do |t|
+			t.id :user
+			t.id :service
+			t.string :param
+			t.string :value
+		end
 	end
 
 	def down

@@ -10,4 +10,15 @@ User homes are allocated at /home.
 Web Domains
 -------------------
 
-Each domains is allocated at /var/www/domain/$USER/$DOMAINNAME. At the users home there is a domains directory that it is a softlink to /var/www/domain/$USER.
+Each domains is allocated at /var/www/vhosts/$DOMAINNAME. Users have a domain folder with links to their domains at /var/www/vhosts.
+
+Doamins are structured as this:
+
+$DOMINPATH/
+  +- config/            Apache configuration for this domain.
+  +- httpdocs/          Documents that are accesible via http and https.
+  +- httpsdocs/         Documents only accesible via https.
+  `- subdomains/        Subdomains for this domain.
+
+
+
